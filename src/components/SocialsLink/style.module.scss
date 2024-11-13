@@ -1,0 +1,25 @@
+.socials {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  .telegram {
+    font-size: 35px;
+    color: blue;
+  }
+
+  .letter {
+    font-size: 35px;
+    color: red;
+  }
+
+  .phone {
+    font-size: 35px;
+  }
+
+  .chat {
+    font-size: 30px;
+    color: green;
+  }
+}

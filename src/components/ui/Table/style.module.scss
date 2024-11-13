@@ -1,0 +1,26 @@
+@import '@/variables.module';
+
+.table {
+  margin: 50px;
+  width: calc(100% - 100px);
+  border-collapse: collapse;
+
+  &__row {
+    &:hover {
+      background: $tableHover;
+      cursor: pointer;
+    }
+
+
+  }
+
+  &__cell {
+    border: 1px solid $table-border;
+    padding: 8px;
+  }
+
+  .active {
+    background-color: #007bff; // Example active background color
+    color: white; // Example active text color
+  }
+}
