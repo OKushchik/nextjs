@@ -9,15 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.3.0",
+    "cookies-next": "^5.0.2",
+    "install": "^0.13.0",
+    "js-cookie": "^3.0.5",
     "next": "15.0.2",
+    "npm": "^10.9.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",
+    "react-redux": "^9.1.2",
     "react-select": "^5.8.2",
     "recharts": "^2.13.3",
+    "redux-persist": "^6.0.0",
     "swiper": "^11.1.14"
   },
   "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

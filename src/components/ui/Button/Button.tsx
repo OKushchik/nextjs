@@ -1,24 +1,24 @@
-import React, {FC, InputHTMLAttributes} from 'react';
+import React, {FC} from 'react';
 import styles from './style.module.scss'
 import {EButtonType} from "@/model/enums";
 
-interface IProps extends InputHTMLAttributes<HTMLButtonElement> {
-  type: EButtonType;
+interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  typeBtn: EButtonType;
   children: React.ReactNode;
 }
 
-const Button:FC<IProps> = ({ type, children, ...props })=> {
+const Button:FC<IProps> = ({ typeBtn, children, ...props })=> {
   return (
     <button
       className={`${styles.button} ${
-        type === EButtonType.PREMIUM
+        typeBtn === EButtonType.PREMIUM
           ? styles.buttonPremium
-          : type === EButtonType.SECONDARY
+          : typeBtn === EButtonType.SECONDARY
             ? styles.buttonSecondary
-            : type === EButtonType.DISABLE
+            : typeBtn === EButtonType.DISABLE
               ? styles.buttonDisable
               : ''
-      }`} disabled={type === EButtonType.DISABLE}
+      }`} disabled={typeBtn === EButtonType.DISABLE}
       {...props}
     >
       {children}

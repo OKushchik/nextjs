@@ -39,7 +39,7 @@ const MemberCard:FC<IProps> = ({member}) => {
 
       {
         role === ERole.ADMIN && <Link className={styles.card__more} href={`/members/${member.id}`}>
-          <Button type={EButtonType.SECONDARY}>View Profile</Button>
+          <Button typeBtn={EButtonType.SECONDARY}>View Profile</Button>
         </Link>
       }
 

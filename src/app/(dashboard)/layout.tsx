@@ -1,8 +1,6 @@
 import type {Metadata} from "next";
 import Menu from "@/components/Menu/Menu";
 import Header from "@/components/Header/Header";
-import {Suspense} from "react";
-import Loading from "./loading";
 
 export const metadata: Metadata = {
   title: "Members",
@@ -22,9 +20,7 @@ export default function RootLayout({
           <Menu/>
         </div>
         <div className="flex-auto">
-          <Suspense fallback={<Loading/>}>
             {children}
-          </Suspense>
         </div>
       </div>
     </div>

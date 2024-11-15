@@ -9,3 +9,12 @@
   background: $background-header;
   padding: 0 15px;
 }
+
+.user {
+  display: flex;
+  gap: 20px;
+}
+
+.logOut:hover {
+  text-decoration: underline;
+}
