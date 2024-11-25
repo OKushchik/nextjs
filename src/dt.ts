@@ -4,6 +4,7 @@ import {TTechnologiesChart, TWorkStatusChart} from "@/model/Types";
 
 export const role: ERole = ERole.ADMIN
 export const status = [EWorkStatus.EMPTY,EWorkStatus.FULL,EWorkStatus.HALF]
+export const positions = [EPosition.FE,EPosition.BE,EPosition.QA,EPosition.DESIGNER]
 export const members: IMember[] = [
   {
     id: 1,
@@ -13,7 +14,7 @@ export const members: IMember[] = [
     email: 'alice@example.com',
     position: EPosition.BE,
     experience: '1',
-    mainSkills: ['Angular', 'Type Script'],
+    skills: ['Angular', 'Type Script'],
     socials: [
       {type: ESocialType.TELEGRAM, href: "https://t.me/kushchik"},
       {type: ESocialType.MAIL, href: "mailto:okushchik@gmail.com"},
@@ -84,7 +85,7 @@ export const members: IMember[] = [
     email: 'bob@example.com',
     position: EPosition.FE,
     experience: '3',
-    mainSkills: ['React', 'Type Script'],
+    skills: ['React', 'Type Script'],
     socials: [
       {type: ESocialType.TELEGRAM, href: "https://t.me/kushchik"},
       {type: ESocialType.MAIL, href: "mailto:okushchik@gmail.com"},
@@ -156,7 +157,7 @@ export const members: IMember[] = [
     email: 'charlie@example.com',
     position: EPosition.QA,
     experience: '3',
-    mainSkills: [],
+    skills: [],
     socials: [
       {type: ESocialType.TELEGRAM, href: "https://t.me/kushchik"},
       {type: ESocialType.MAIL, href: "mailto:okushchik@gmail.com"},
@@ -228,7 +229,7 @@ export const members: IMember[] = [
     email: 'alex@example.com',
     position: EPosition.DESIGNER,
     experience: '3',
-    mainSkills: [],
+    skills: [],
     socials: [
       {type: ESocialType.TELEGRAM, href: "https://t.me/kushchik"},
       {type: ESocialType.MAIL, href: "mailto:okushchik@gmail.com"},
@@ -299,7 +300,7 @@ export const members: IMember[] = [
     email: 'alex@example.com',
     position: EPosition.DESIGNER,
     experience: '3',
-    mainSkills: [],
+    skills: [],
     socials: [
       {type: ESocialType.TELEGRAM, href: "https://t.me/kushchik"},
       {type: ESocialType.MAIL, href: "mailto:okushchik@gmail.com"},

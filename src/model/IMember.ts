@@ -10,7 +10,7 @@ export interface IMember {
   socials?: TSocial[];
   position?: EPosition;
   experience?: string;
-  mainSkills?: string[];
+  skills?: string[];
   role?: ERole;
   status?: EWorkStatus;
   cv?: {

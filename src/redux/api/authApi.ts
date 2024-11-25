@@ -1,20 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import Cookies from 'js-cookie';
+import {AuthResponse, LoginCredentials, RegisterCredentials} from "@/model/IAuth";
 
-interface AuthResponse {
-  token: string;
-}
-
-interface LoginCredentials {
-  email: FormDataEntryValue | null;
-  password: FormDataEntryValue | null;
-}
-
-interface RegisterCredentials {
-  email: string;
-  password: string;
-  name: string;
-}
 
 export const authApi = createApi({
   reducerPath: 'authApi',
@@ -35,7 +22,6 @@ export const authApi = createApi({
         method: 'POST',
         body: credentials,
       }),
-      // Save token in cookies on successful login
       async onQueryStarted(_, { queryFulfilled }) {
         try {
           const { data } = await queryFulfilled;
@@ -43,7 +29,7 @@ export const authApi = createApi({
             Cookies.set('accessToken', data.token, { expires: 7 });
           }
         } catch (error) {
-          console.error('Login failed:', error);
+          console.log('Login failed:', error);
         }
       },
     }),

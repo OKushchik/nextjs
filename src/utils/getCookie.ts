@@ -1,5 +1,5 @@
-import Cookies from 'js-cookie';
+import type {NextRequest} from "next/server";
 
-export const getTokenFromCookies = () => {
-  return Cookies.get('accessToken');
+export const getTokenFromCookies = (request: NextRequest) => {
+  return request.cookies.get('accessToken')?.value;
 };

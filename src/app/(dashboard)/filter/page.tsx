@@ -1,7 +1,7 @@
 'use client'
 import styles from './style.module.scss'
 import {members, skills, status} from "@/dt";
-import SelectComponent from "@/components/ui/SelectComponent/Select";
+import SelectComponent from "@/components/ui/SelectComponent/SelectComponent";
 import React, {useEffect, useState} from "react";
 import { MultiValue } from 'react-select';
 import {IOption} from "@/model/IOption";
@@ -29,7 +29,7 @@ export default function FilterPage() {
     let updatedFiltered = result;
 
     if (selectedSkills && selectedSkills.length > 0) {
-      updatedFiltered = filteredFunc(updatedFiltered, 'mainSkills', selectedSkills);
+      updatedFiltered = filteredFunc(updatedFiltered, 'skills', selectedSkills);
     }
 
     if (selectedStatus && selectedStatus.length > 0) {
@@ -67,7 +67,7 @@ export default function FilterPage() {
     },
     {
       label: 'Skills',
-      property: 'mainSkills'
+      property: 'skills'
     },
     {
       label: 'Position',

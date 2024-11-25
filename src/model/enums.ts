@@ -28,3 +28,9 @@ export const enum EPosition {
   QA = 'QA',
 }
 
+export const enum ENotify {
+  ERROR = 'error',
+  WARNING = 'warning',
+  SUCCESS = 'success',
+}
+

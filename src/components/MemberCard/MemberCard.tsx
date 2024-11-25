@@ -30,7 +30,7 @@ const MemberCard:FC<IProps> = ({member}) => {
       }
 
       {
-        member.mainSkills && <div className={styles.card__skills}><span><b>Skills:</b></span> {member.mainSkills?.join(',')}</div>
+        member.skills && <div className={styles.card__skills}><span><b>Skills:</b></span> {member.skills?.join(',')}</div>
       }
 
       {

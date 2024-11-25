@@ -1,0 +1,40 @@
+.notification {
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  color: #ffffff;
+  width: 300px;
+  max-width: 90%;
+  margin-left: auto;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.notificationError {
+  background: red;
+}
+
+.notificationWarning {
+  background: yellow;
+  color: #000000;
+  .closeBtn {
+    border: 1px solid #000000;
+  }
+}
+
+.notificationSuccess {
+  background: green;
+}
+
+
+
+.closeBtn {
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}

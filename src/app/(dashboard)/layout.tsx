@@ -13,6 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+
     <div>
       <Header/>
       <div className="flex">
@@ -20,10 +21,11 @@ export default function RootLayout({
           <Menu/>
         </div>
         <div className="flex-auto">
-            {children}
+          {children}
         </div>
       </div>
     </div>
+
   )
     ;
 }
