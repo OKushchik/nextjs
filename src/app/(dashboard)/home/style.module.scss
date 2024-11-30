@@ -1,0 +1,25 @@
+.page {
+  padding: 0 40px 40px;
+}
+
+.diagram {
+  &__title {
+    margin: 20px;
+    text-align: center;
+    font-size: 32px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 100px;
+  }
+
+  &__block {
+    flex: 1;
+    border: 1px solid grey;
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
+}

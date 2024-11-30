@@ -1,0 +1,37 @@
+.title {
+  margin: 40px 0 20px;
+  font-size: 48px;
+  font-weight: 600;
+  color: #28046f;
+}
+
+.wrapper {
+  margin: 50px;
+}
+
+.dropDownList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dropDownItem:not(:last-child) {
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
+
+.dropDownItemTitle {
+  font-size: 22px;
+}
+
+.dropDownItemDescription {
+  font-size: 16px;
+}
+
+.dropDownItemLink {
+  color: blue;
+
+  &:hover {
+    color: red;
+  }
+}

@@ -1,0 +1,18 @@
+.inputBlock {
+
+  &__lable {
+    display: block;
+    margin: 5px 0;
+  }
+  &__input {
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  &__error {
+    display: block;
+    color: red;
+    font-size: 12px;
+  }
+}

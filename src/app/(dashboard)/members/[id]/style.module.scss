@@ -1,0 +1,40 @@
+.memberPage {
+  min-height: 100%;
+  padding: 40px;
+}
+
+.memberBlock {
+  margin: 0 auto;
+  max-width: 900px;
+
+  &__image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+
+  &__name {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 10px;
+    font-size: 28px;
+  }
+
+  &__position {
+    text-align: center;
+  }
+
+  &__resumeTitle {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  &__resume {
+    p {
+      padding: 15px;
+    }
+  }
+}

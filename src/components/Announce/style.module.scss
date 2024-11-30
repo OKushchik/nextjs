@@ -1,0 +1,32 @@
+.card {
+  padding: 40px;
+  margin: 40px auto;
+  text-align: center;
+  background: #c3d1f3;
+  border-radius: 5px;
+}
+.cardImage {
+  margin: 0 auto;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.cardDate {
+  font-size: 42px;
+  font-weight: 600;
+  color: #28046f;
+}
+
+.cardTitle {
+  font-size: 28px;
+  font-weight: 600;
+  color: #28046f;
+}
+
+.cardDescription {
+  font-size: 16px;
+  color: #28046f;
+}
+

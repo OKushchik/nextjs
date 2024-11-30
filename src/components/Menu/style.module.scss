@@ -1,0 +1,24 @@
+@import '@/variables.module';
+
+.menu {
+  height: 100%;
+  width: 200px;
+  min-height: calc(100vh - 60px);
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: $background-menu;
+
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $text-color-dark;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

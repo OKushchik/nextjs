@@ -1,0 +1,25 @@
+.dropDownWrapper {
+
+}
+
+.dropDownButton {
+  padding: 5px 15px;
+  cursor: pointer;
+  box-shadow: 0 0 3px 0 grey;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropDownContent {
+  padding: 15px;
+}
+
+.arrow {
+  transform: rotate(0deg);
+}
+
+.arrowRotated {
+  transform: rotate(-90deg);
+}
